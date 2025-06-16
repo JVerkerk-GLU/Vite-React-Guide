@@ -14,7 +14,8 @@ A comprehensive guide for building modern web applications using Vite, React, an
 
 <p>
   <a href="#key-features">Key Features</a> •
-  <a href="#fundamentals">Fundamentals</a>
+  <a href="#basics">Basics</a> •
+  <a href="#advanced">Advanced</a>
 </p>
 
 </div>
@@ -30,9 +31,16 @@ This guide provides a structured approach to learning modern web development wit
 - 📦 Package management with npm
 - 🔍 Code organization and project structure
 
-### Fundamentals
-- [Project Setup](./setup/README.md) - Complete guide to setting up your development environment
-- [HTML & CSS Guide](./html-css/README.md) - Basics on HTML tags and CSS properties
-- [React Hooks](./hooks.md) - Understanding and using React Hooks effectively
-- Installing Packages - Learn how to add existing packages like UI Libraries or Systems
-- Building & Deploying - A step by step guide to build your project using Vite
+### Basics
+- [Project Setup](basics/setup.md) - Complete guide to setting up your development environment
+- [HTML & CSS Guide](basics/html-css.md) - Basics on HTML tags and CSS properties
+- [React Hooks](basics/hooks.md) - Understanding and using React Hooks effectively
+- [Installing Packages](basics/package.md) - Learn how to add existing packages like UI Libraries or Systems
+- [Building & Deploying](basics/build.md) - A step by step guide to build your project using Vite
+
+### Advanced Subjects
+- [Project Structures](advanced/structure.md) - How to organize your project folders, components, and files for maintainability and scalability
+- [Routing](advanced/routing.md) - Learn to add page navigation and nested routes to your application using React Router
+- [State Management](advanced/state.md) - Understand React’s built-in state tools and when to use more advanced libraries like Zustand or Context
+- [Testing & Debugging](advanced/testing.md) - Intro to unit testing, component testing, and using debugging tools in VSCode and browsers
+- Deployment Deep Dive - Hosting with custom domains, environment variables, and automating deployment with GitHub Actions or CI/CD

@@ -1,15 +1,15 @@
 # HTML & CSS Guide
 << [back](../README.md)
 
----
-
 ## Introduction
 
 This guide will help you get you started with writing semantic HTML and styling your application using CSS.
 Although a full description of all HTML and CSS is outside the scope of this repository, check out online tutorials and sites such
 as [W3Schools](https://www.w3schools.com/) for more in depth information.
 
-## What is HTML?
+---
+
+## HTML
 
 HTML stands for **HyperText Markup Language**. It is the basic structure of a webpage. It tells the browser what to show — like text, images, buttons, and more.
 
@@ -33,7 +33,9 @@ An HTML file is made up of **elements** — each element is like a building bloc
 - Elements often come in pairs: an opening tag `<h1>` and a closing tag `</h1>`.
 - The `class="site-header"` part lets us add styles using CSS.
 
-## What is CSS?
+---
+
+## CSS
 
 CSS stands for **Cascading Style Sheets**. It controls how your webpage looks — like colors, spacing, fonts, and layout.
 
@@ -72,6 +74,8 @@ h1 {
 import './style.css';
 ```
 Now any element with `class="site-header"` will have this style.
+
+---
 
 ## Learn More
 This guide gives you the basics, but you can learn more by exploring:
