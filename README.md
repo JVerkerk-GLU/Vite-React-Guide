@@ -43,4 +43,4 @@ This guide provides a structured approach to learning modern web development wit
 - [Routing](advanced/routing.md) - Learn to add page navigation and nested routes to your application using React Router
 - [State Management](advanced/state.md) - Understand React’s built-in state tools and when to use more advanced libraries like Zustand or Context
 - [Testing & Debugging](advanced/testing.md) - Intro to unit testing, component testing, and using debugging tools in VSCode and browsers
-- Deployment Deep Dive - Hosting with custom domains, environment variables, and automating deployment with GitHub Actions or CI/CD
+- [Deployment Deep Dive](advanced/deploy.md) - Hosting with custom domains, environment variables, and automating deployment with GitHub Actions or CI/CD
