@@ -6,7 +6,7 @@
 
 # GLU - Vite + React Guide
 
-A comprehensive guide for building modern web applications using Vite, React, and TypeScript
+Een repository voor het bouwen van moderne webapplicaties met Vite, React en TypeScript
 
 <picture><img alt="Static Badge" src="https://img.shields.io/badge/React%20-%2018.0%20-%2361DAFB?style=for-the-badge&logo=react"></picture>
 <picture><img alt="Static Badge" src="https://img.shields.io/badge/TypeScript%20-%204.9%20-%233178C6?style=for-the-badge&logo=typescript"></picture>
@@ -20,27 +20,28 @@ A comprehensive guide for building modern web applications using Vite, React, an
 
 </div>
 
-## Key Features
-This guide provides a structured approach to learning modern web development with React:
+## Kenmerken
+Deze repository biedt een gestructureerde aanpak voor het leren van moderne webontwikkeling met React:
 
-- 🚀 Quick project setup with Vite
-- 💪 Type-safe development using TypeScript
-- ⚛️ Modern React practices and patterns
-- 🎨 Styling solutions and best practices
-- 🔧 Development environment configuration
-- 📦 Package management with npm
-- 🔍 Code organization and project structure
+- 🚀 Snelle projectopzet met Vite
+- 💪 Type-veilige ontwikkeling met TypeScript
+- ⚛️ Moderne React praktijken en patronen
+- 🎨 Stylingoplossingen en best practices
+- 🔧 Configuratie van de ontwikkelomgeving
+- 📦 Pakketbeheer met npm
+- 🔍 Codeorganisatie en projectstructuur
 
-### Basics
-- [Project Setup](basics/setup.md) - Complete guide to setting up your development environment
-- [HTML & CSS Guide](basics/html-css.md) - Basics on HTML tags and CSS properties
-- [React Hooks](basics/hooks.md) - Understanding and using React Hooks effectively
-- [Installing Packages](basics/package.md) - Learn how to add existing packages like UI Libraries or Systems
-- [Building & Deploying](basics/build.md) - A step by step guide to build your project using Vite
+## Basis
+- [Project Setup](basics/setup.md) - Complete handleiding voor het opzetten van je ontwikkelomgeving
+- [HTML & CSS Guide](basics/html-css.md) - Basiskennis van HTML-tags en CSS-eigenschappen
+- [React Hooks](basics/hooks.md) - React Hooks begrijpen en effectief gebruiken
+- [Installing Packages](basics/package.md) - Leer hoe je bestaande pakketten zoals UI-bibliotheken of systemen toevoegt
+- [Building & Deploying](basics/build.md) - Stapsgewijze handleiding om je project te bouwen met Vite
 
-### Advanced Subjects
-- [Project Structures](advanced/structure.md) - How to organize your project folders, components, and files for maintainability and scalability
-- [Routing](advanced/routing.md) - Learn to add page navigation and nested routes to your application using React Router
-- [State Management](advanced/state.md) - Understand React’s built-in state tools and when to use more advanced libraries like Zustand or Context
-- [Testing & Debugging](advanced/testing.md) - Intro to unit testing, component testing, and using debugging tools in VSCode and browsers
-- [Deployment Deep Dive](advanced/deploy.md) - Hosting with custom domains, environment variables, and automating deployment with GitHub Actions or CI/CD
+## Geavanceerd
+- [Project Structures](advanced/structure.md) - Hoe je je projectmappen, componenten en bestanden organiseert voor onderhoudbaarheid en schaalbaarheid
+- [Routing](advanced/routing.md) - Leer pagina-navigatie en geneste routes toe te voegen aan je applicatie met React Router
+- [State Management](advanced/state.md) - Begrijp de ingebouwde state-tools van React en wanneer je meer geavanceerde libraries zoals Zustand of Context moet gebruiken
+- [Testing & Debugging](advanced/testing.md) - Introductie tot unittests, componenttests en het gebruik van debugtools in VSCode en browsers
+- [Deployment Deep Dive](advanced/deploy.md) - Hosting met custom domeinen, omgevingsvariabelen en het automatiseren van deployment met GitHub Actions of CI/CD
+

@@ -3,20 +3,18 @@
 
 ## What Are Hooks?
 
-React Hooks are special functions that let you use React features inside your components.
+React Hooks zijn speciale functies die je in staat stellen om React-functionaliteiten te gebruiken binnen je componenten.
 
-Before hooks, you had to write **class components** to use things like state or lifecycle methods. Now you can do all of that with simpler **function components**.
-
-You can think of hooks as "tools" that help your component do more things.
+Je kunt hooks zien als "tools" die je component meer mogelijkheden geven.
 
 ---
 
 ## useState
 
-### What it does:
-Lets your component **remember values** (like a counter, a name, etc).
+### Wat het doet:
+Laat je component **waarden onthouden** (zoals een teller, een naam, enz.).
 
-### Example:
+### Voorbeeld:
 
 ```tsx
 import { useState } from 'react';
@@ -31,19 +29,20 @@ function Counter() {
     </div>
   );
 }
-```
+````
 
-- `useState(0)` creates a variable called `count` and sets it to 0 at first.
-- `setCount` is a function that updates the value.
+* `useState(0)` maakt een variabele `count` aan en zet deze standaard op 0.
+* `setCount` is een functie die de waarde bijwerkt.
 
 ---
 
 ## useEffect
 
-### What it does:
-Runs code when your component **mounts**, **updates**, or **cleans up**.
+### Wat het doet:
 
-### Example:
+Voert code uit wanneer je component **laadt**, **bijwerkt** of **wordt verwijderd**.
+
+### Voorbeeld:
 
 ```tsx
 import { useEffect } from 'react';
@@ -61,20 +60,21 @@ function App() {
 }
 ```
 
-- The empty array `[]` means this effect runs only once — when the component first loads.
+* De lege array `[]` betekent dat dit effect maar één keer wordt uitgevoerd — wanneer de component voor het eerst laadt.
 
 ---
 
 ## useContext
 
-### What it does:
-Lets you share data (like a theme, user info, or language setting) with many components without passing props down manually through every level.
+### Wat het doet:
 
-This is helpful when multiple components need access to the same data.
+Laat je data delen (zoals een thema, gebruikersinfo of taalinstelling) met meerdere componenten zonder handmatig props door te geven op elk niveau.
 
-### Example:
+Dit is handig wanneer meerdere componenten toegang nodig hebben tot dezelfde data.
 
-First, create a context (note that you create a context **outside** a function of a component):
+### Voorbeeld:
+
+Maak eerst een context aan (dit doe je **buiten** een component):
 
 ```tsx
 import { createContext } from 'react';
@@ -82,7 +82,8 @@ import { createContext } from 'react';
 export const ThemeContext = createContext('light');
 ```
 
-Now wrap your app with the provider (this is where you actually store the value, only child elements have access to the value):
+Wikkel daarna je app in de provider (hier sla je de waarde daadwerkelijk op; alleen child-componenten hebben toegang):
+
 ```tsx
 import { ThemeContext } from './ThemeContext';
 
@@ -95,7 +96,7 @@ function App() {
 }
 ```
 
-Inside any other component that is a child of the provider, use useContext to get (or set) the value:
+In een andere component die een child is van de provider gebruik je useContext om de waarde te krijgen (of te zetten):
 
 ```tsx
 import { useContext } from 'react';
@@ -108,9 +109,10 @@ function Page() {
 }
 ```
 
-### Why use `useContext`?
+### Waarom `useContext` gebruiken?
 
-Without it, you'd have to do this:
+Zonder context zou je dit moeten doen:
+
 ```tsx
 <App theme="dark">
   <Layout theme="dark">
@@ -118,16 +120,18 @@ Without it, you'd have to do this:
   </Layout>
 </App>
 ```
-With context, you **only provide it once**, and all child components can access it.
+
+Met context **geef je het slechts één keer mee**, en alle child-componenten kunnen het gebruiken.
 
 ---
 
 ## useRef
 
-### What it does:
-Gives you a way to reference a DOM element (like an input field), or store a value without causing a re-render.
+### Wat het doet:
 
-### Example:
+Geeft je een manier om een DOM-element (zoals een inputveld) te refereren, of een waarde op te slaan zonder dat er een her-render plaatsvindt.
+
+### Voorbeeld:
 
 ```tsx
 import { useRef } from 'react';
@@ -152,15 +156,15 @@ function FocusInput() {
 
 ## Tips for Using Hooks
 
-- Always use hooks **at the top** of your component (not inside if-statements or loops).
-- Hooks **must start with "use"** — like `useState`, `useEffect`.
-- Only use hooks **inside React function components**.
+* Gebruik hooks altijd **bovenaan** je component (niet binnen if-statements of loops).
+* Hooks moeten **beginnen met "use"** — zoals `useState`, `useEffect`.
+* Gebruik hooks alleen **binnen React function components**.
 
 ---
 
 ## Learn More
 
-Want to go deeper? Check these out:
+Wil je dieper in de materie duiken? Bekijk dan:
 
-🔗 [React Official Docs on Hooks](https://react.dev/learn/state-a-components-memory)  
-🔗 [W3Schools React Hooks](https://www.w3schools.com/react/react_hooks.asp)
+* 🔗 [React Official Docs on Hooks](https://react.dev/learn/state-a-components-memory)
+* 🔗 [W3Schools React Hooks](https://www.w3schools.com/react/react_hooks.asp)

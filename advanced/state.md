@@ -5,15 +5,15 @@
 
 ## What Is State?
 
-State is how React remembers information between renders. It can be anything: a user's input, a theme toggle, or fetched data.
+State is hoe React informatie onthoudt tussen renders. Het kan van alles zijn: invoer van een gebruiker, een thema-toggle of opgehaalde data.
 
-React provides built-in tools for managing state, and for larger apps, you can bring in libraries like Zustand or Redux.
+React heeft ingebouwde tools voor het beheren van state, en voor grotere apps kun je extra bibliotheken gebruiken zoals Zustand of Redux.
 
 ---
 
 ## Local State with useState
 
-The most common way to handle component state:
+De meest gebruikte manier om component-state te beheren:
 
 ```tsx
 import { useState } from 'react'
@@ -30,14 +30,14 @@ function Counter() {
 }
 ````
 
-* `useState(0)` sets the initial value to 0
-* `setCount` updates the value
+* `useState(0)` stelt de beginwaarde in op 0
+* `setCount` wijzigt de waarde
 
 ---
 
 ## Sharing State with Props
 
-You can pass state and functions to child components:
+Je kunt state en functies doorgeven aan child components:
 
 ```tsx
 function Parent() {
@@ -56,7 +56,7 @@ function Child({ theme, toggleTheme }: { theme: string; toggleTheme: () => void 
 
 ## App-Wide State with useContext
 
-If many components need the same state, use **Context**:
+Als meerdere componenten dezelfde state nodig hebben, gebruik je **Context**:
 
 ```tsx
 // ThemeContext.tsx
@@ -76,19 +76,19 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 export const useTheme = () => useContext(ThemeContext)
 ```
 
-Wrap your app in `ThemeProvider` in `main.tsx`, then use `useTheme()` in any component.
+Omhul je app met `ThemeProvider` in `main.tsx`, en gebruik `useTheme()` in elke component.
 
 ---
 
 ## Zustand (Lightweight Global State)
 
-[Zustand](https://zustand-demo.pmnd.rs/) is a simple and fast state management library.
+[Zustand](https://zustand-demo.pmnd.rs/) is een eenvoudige en snelle bibliotheek voor state management.
 
 ```bash
 npm install zustand
 ```
 
-Create a store:
+Maak een store aan:
 
 ```ts
 // useCounterStore.ts
@@ -100,7 +100,7 @@ export const useCounterStore = create((set) => ({
 }))
 ```
 
-Use it in any component:
+Gebruik deze store in een component:
 
 ```tsx
 import { useCounterStore } from './useCounterStore'
@@ -125,6 +125,6 @@ function Counter() {
 
 ## Learn More
 
-* [React Docs – State](https://react.dev/learn/state-a-components-memory)
-* [Zustand Docs](https://docs.pmnd.rs/zustand/introduction)
-* [React Context – w3schools](https://www.w3schools.com/react/react_context.asp)
+* 🔗 [React Docs – State](https://react.dev/learn/state-a-components-memory)
+* 🔗 [Zustand Docs](https://docs.pmnd.rs/zustand/introduction)
+* 🔗 [React Context – w3schools](https://www.w3schools.com/react/react_context.asp)

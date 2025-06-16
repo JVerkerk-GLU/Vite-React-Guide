@@ -6,12 +6,11 @@
 
 ## Prerequisites
 
-Before you start, make sure you have these installed:
+Voordat je begint, zorg dat je deze tools geïnstalleerd hebt:
 
-* [Node.js](https://nodejs.org/en) (JavaScript runtime)
-* Git (version control)
-* A code editor, such as:
-
+* [Node.js](https://nodejs.org/en) (JavaScript-runtime)
+* Git (versiebeheer)
+* Een code-editor (IDE), zoals:
     * [Visual Studio Code](https://code.visualstudio.com/)
     * [WebStorm](https://www.jetbrains.com/webstorm/)
 
@@ -19,35 +18,35 @@ Before you start, make sure you have these installed:
 
 ## Creating a New Vite + React Project
 
-Open your terminal and follow these steps:
+Open je terminal en volg deze stappen:
 
-1. Navigate to or create an empty folder for your project.
+1. Navigeer naar (of maak) een lege map voor je project.
 
-2. Open this folder in your editor (VSCode or WebStorm).
+2. Open deze map in je editor (VSCode of WebStorm).
 
-3. Open the terminal inside the editor.
+3. Open de terminal in de editor.
 
-4. Run the Vite project creation command:
+4. Voer het volgende commando uit om een Vite-project te starten:
 
-   ```bash
+```bash
    npm create vite@latest
-   ```
+```
 
-5. A setup wizard will appear:
+5. Er verschijnt een installatie-wizard:
 
-    * Use a single dot `.` for the project name (to use the current folder)
-    * If it asks to overwrite existing files, choose **Ignore**
-    * Choose a package name (or leave it blank)
-    * Select **React** as the framework
-    * Select **TypeScript** as the variant
+    * Gebruik een punt `.` als projectnaam (om de huidige map te gebruiken)
+    * Als er gevraagd wordt om bestaande bestanden te overschrijven, kies **Ignore**
+    * Kies een pakketnaam (of laat leeg)
+    * Selecteer **React** als framework
+    * Selecteer **TypeScript** als variant
 
-6. When the wizard finishes, install the dependencies:
+6. Als de wizard klaar is, installeer dan de dependencies:
 
    ```bash
    npm install
    ```
 
-7. Start the development server:
+7. Start de ontwikkelserver:
 
    ```bash
    npm run dev
@@ -55,21 +54,21 @@ Open your terminal and follow these steps:
 
 ---
 
-## Result
+## Resultaat
 
-If everything worked, Vite will launch your new React app at:
+Als alles gelukt is, start Vite je nieuwe React-app op:
 
 ```
 http://localhost:5173
 ```
 
-You should see a page like this:
+Je zou een pagina moeten zien zoals deze:
 
 <img src="setup-example.png" alt="Vite Example Page">
 
 ---
 
-## 🔗 Learn More
+## 🔗 Meer Leren
 
-* [Vite Documentation](https://vitejs.dev/)
-* [React Documentation](https://reactjs.org/)
+* [Vite Documentatie](https://vitejs.dev/)
+* [React Documentatie](https://reactjs.org/)

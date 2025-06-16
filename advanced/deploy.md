@@ -3,51 +3,51 @@
 
 ---
 
-## Hosting Your App
+## Hosting your App
 
-After building your React app with Vite, you need to host it on a web server or platform.
+Na het bouwen van je React-app met Vite, moet je deze hosten op een webserver of platform.
 
-### Popular Hosting Providers
+### Populaire Hosting Providers
 
-- **Netlify** — Easy setup with Git integration and custom domains
-- **Vercel** — Optimized for frontend frameworks like React
-- **GitHub Pages** — Free for static sites, good for small projects
-- **Cloudflare Pages** — Fast global CDN for static sites
+- **Netlify** — Makkelijk op te zetten met Git-integratie en eigen domeinen
+- **Vercel** — Geoptimaliseerd voor frontend-frameworks zoals React
+- **GitHub Pages** — Gratis voor statische sites, goed voor kleine projecten
+- **Cloudflare Pages** — Supersnelle wereldwijde CDN voor statische sites
 
 ---
 
-## Custom Domains
+## Custom Domain
 
-Most hosting providers let you connect your own domain:
+De meeste hostingproviders laten je een eigen domeinnaam koppelen:
 
-1. Buy a domain from registrars like Namecheap or Google Domains.
-2. Add DNS records (usually CNAME or A records) pointing to your hosting service.
-3. Configure the domain in your hosting dashboard.
+1. Koop een domeinnaam via een registrar zoals Namecheap of Google Domains.
+2. Voeg DNS-records toe (meestal CNAME of A-records) die wijzen naar je hostingplatform.
+3. Stel je domeinnaam in via het dashboard van je hostingprovider.
 
 ---
 
 ## Environment Variables
 
-Use environment variables to store sensitive info or environment-specific settings (API keys, endpoints).
+Gebruik omgevingsvariabelen om gevoelige gegevens of omgevings-specifieke instellingen op te slaan (zoals API-sleutels).
 
-- Create `.env` files at the root of your project:
+- Maak `.env`-bestanden aan in de hoofdmap van je project:
 
 ```bash
 VITE_API_URL=https://api.example.com
 VITE_ANALYTICS_KEY=abcd1234
 ````
 
-* Access them in your React code with `import.meta.env.VITE_API_URL`
+* Toegang in je React-code via: `import.meta.env.VITE_API_URL`
 
-> **Note:** Vite requires env variables to start with `VITE_` to expose them to the client.
+> **Let op:** Vite vereist dat variabelen beginnen met `VITE_` om ze beschikbaar te maken aan de frontend.
 
 ---
 
-## Automating Deployment with GitHub Actions
+## Deployment with GitHub Actions
 
-Automate builds and deployment whenever you push code.
+Laat je app automatisch bouwen en deployen telkens als je code pusht.
 
-### Example workflow `.github/workflows/deploy.yml`:
+### Example `.github/workflows/deploy.yml`:
 
 ```yaml
 name: Deploy React App
@@ -84,7 +84,7 @@ jobs:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
 ```
 
-> You’ll need to add `NETLIFY_AUTH_TOKEN` and `NETLIFY_SITE_ID` as [GitHub Secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets).
+> Je moet `NETLIFY_AUTH_TOKEN` en `NETLIFY_SITE_ID` toevoegen als [GitHub Secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets).
 
 ---
 
@@ -94,26 +94,28 @@ jobs:
 * **CircleCI**
 * **Travis CI**
 
-Most work similarly: checkout code, install, build, then deploy.
+De werking is meestal hetzelfde: code ophalen, dependencies installeren, bouwen, en deployen.
 
 ---
 
-## Tips for Production
+## Tips voor Productie
 
-* Always test your production build locally before deploying:
+* Test altijd je productie-build lokaal vóór je die publiceert:
 
   ```bash
   npm run build
   npx serve dist
   ```
-* Enable HTTPS on your domain for security.
-* Use CDN caching for faster load times.
+
+* Zet HTTPS aan voor je domein voor extra veiligheid.
+
+* Gebruik CDN-caching voor snellere laadtijden.
 
 ---
 
 ## Learn More
 
-* [Netlify Docs](https://docs.netlify.com/)
-* [Vercel Docs](https://vercel.com/docs)
-* [GitHub Actions](https://docs.github.com/en/actions)
-* [Vite Env Variables](https://vitejs.dev/guide/env-and-mode.html)
+* 🔗 [Netlify Documentatie](https://docs.netlify.com/)
+* 🔗 [Vercel Documentatie](https://vercel.com/docs)
+* 🔗 [GitHub Actions](https://docs.github.com/en/actions)
+* 🔗 [Vite Omgevingsvariabelen](https://vitejs.dev/guide/env-and-mode.html)

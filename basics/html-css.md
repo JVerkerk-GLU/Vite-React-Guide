@@ -1,24 +1,23 @@
 # HTML & CSS Guide
-<< [back](../README.md)
+< [back](../README.md)
 
 ## Introduction
 
-This guide will help you get you started with writing semantic HTML and styling your application using CSS.
-Although a full description of all HTML and CSS is outside the scope of this repository, check out online tutorials and sites such
-as [W3Schools](https://www.w3schools.com/) for more in depth information.
+Deze gids helpt je op weg met het schrijven van semantische HTML en het stijlen van je applicatie met CSS.
+Hoewel een volledige beschrijving van alle HTML en CSS buiten de scope van deze repository valt, kun je voor meer uitleg terecht op online tutorials zoals [W3Schools](https://www.w3schools.com/).
 
 ---
 
 ## HTML
 
-HTML stands for **HyperText Markup Language**. It is the basic structure of a webpage. It tells the browser what to show — like text, images, buttons, and more.
+HTML staat voor **HyperText Markup Language**. Het is de basisstructuur van een webpagina. Het vertelt de browser wat er getoond moet worden — zoals tekst, afbeeldingen, knoppen en meer.
 
-An HTML file is made up of **elements** — each element is like a building block of your page.
+Een HTML-bestand bestaat uit **elementen** — elk element is als een bouwsteen van je pagina.
 
 ### HTML Basics
 
-- Use tags like `<header>`, `<main>`, `<section>`, and `<footer>` to organize your page.
-- These are called semantic tags — they help describe the meaning of the content.
+- Gebruik tags zoals `<header>`, `<main>`, `<section>`, en `<footer>` om je pagina te organiseren.
+- Dit zijn semantische tags — ze helpen om de betekenis van de inhoud te verduidelijken.
 
 ### HTML Example
 
@@ -26,30 +25,30 @@ An HTML file is made up of **elements** — each element is like a building bloc
 <header class="site-header">
     <h1>My Web App</h1>
 </header>
-```
+````
 
-- `<header>` and `<h1>` are elements.
-- The text inside `Hello World` is what you see on the page.
-- Elements often come in pairs: an opening tag `<h1>` and a closing tag `</h1>`.
-- The `class="site-header"` part lets us add styles using CSS.
+* `<header>` en `<h1>` zijn elementen.
+* De tekst binnen `Hello World` is wat je op de pagina ziet.
+* Elementen komen vaak in paren: een openingstag `<h1>` en een sluitingstag `</h1>`.
+* Het stukje `class="site-header"` zorgt ervoor dat we er met CSS een stijl aan kunnen geven.
 
 ---
 
 ## CSS
 
-CSS stands for **Cascading Style Sheets**. It controls how your webpage looks — like colors, spacing, fonts, and layout.
+CSS staat voor **Cascading Style Sheets**. Het bepaalt hoe je webpagina eruitziet — zoals kleuren, marges, lettertypes en layout.
 
-CSS is often written in a separate file with a .css extension.
+CSS wordt vaak geschreven in een apart bestand met een `.css` extensie.
 
-You can style your components using plain CSS, CSS Modules, or utility-first frameworks like [Tailwind](https://tailwindcss.com/).
+Je kunt je componenten stijlen met gewone CSS, CSS Modules of utility-first frameworks zoals [Tailwind](https://tailwindcss.com/).
 
 ### CSS Basics
 
-You can add styles to your webpage in different ways:
+Je kunt op verschillende manieren stijlen toevoegen aan je webpagina:
 
-- Global CSS: in files like `src/index.css` or `App.css`
-- Component CSS: specific to a component (like `Button.module.css`)
-- Utility Libraries: like Tailwind CSS, which gives you pre-made classes
+* Globale CSS: in bestanden zoals `src/index.css` of `App.css`
+* Component CSS: specifiek voor een component (zoals `Button.module.css`)
+* Utility Libraries: zoals Tailwind CSS, dat vooraf gemaakte klassen aanbiedt
 
 ### CSS Example
 
@@ -61,23 +60,29 @@ h1 {
 
 ### Adding New CSS
 
-1. Create a new file like `style.css`
-2. Add some CSS code:
+1. Maak een nieuw bestand aan, bijvoorbeeld `style.css`
+2. Voeg wat CSS-code toe:
+
 ```css
 .site-header {
   background-color: #f0f0f0;
   padding: 1rem;
 }
 ```
-3. Import the CSS at the top of your component file (like `App.tsx`):
+
+3. Importeer het CSS-bestand bovenaan je componentbestand (zoals `App.tsx`):
+
 ```tsx
 import './style.css';
 ```
-Now any element with `class="site-header"` will have this style.
+
+Nu zal elk element met `class="site-header"` deze stijl gebruiken.
 
 ---
 
 ## Learn More
-This guide gives you the basics, but you can learn more by exploring:
-- 🔗 [w3schools HTML Tutorial](https://www.w3schools.com/html)
-- 🔗 [w3schools CSS Tutorial](https://www.w3schools.com/css)
+
+Deze gids geeft je de basis, maar je kunt meer leren via:
+
+* 🔗 [w3schools HTML Tutorial](https://www.w3schools.com/html)
+* 🔗 [w3schools CSS Tutorial](https://www.w3schools.com/css)

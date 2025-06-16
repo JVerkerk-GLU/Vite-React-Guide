@@ -5,32 +5,32 @@
 
 ## Why Test?
 
-Testing helps ensure your app works correctly and prevents bugs from slipping into production.
+Testen zorgt ervoor dat je app correct werkt en voorkomt dat bugs in productie terechtkomen.
 
-Types of tests:
+Soorten tests:
 
-- **Unit tests**: Test individual functions or components
-- **Component tests**: Test React components and their UI behavior
+- **Unit tests**: Testen van individuele functies of componenten
+- **Component tests**: Testen van React-componenten en hun UI-gedrag
 
 ---
 
 ## Popular Testing Tools
 
-- [Jest](https://jestjs.io/) — JavaScript testing framework
-- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) — For testing React components
-- [Vitest](https://vitest.dev/) — Vite-native test runner (optional alternative to Jest)
+- [Jest](https://jestjs.io/) — JavaScript-testframework
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) — Voor het testen van React-componenten
+- [Vitest](https://vitest.dev/) — Vite-native testrunner (optioneel alternatief voor Jest)
 
 ---
 
 ## Getting Started with Testing
 
-Install dependencies:
+Installeer de testafhankelijkheden:
 
 ```bash
 npm install --save-dev jest @testing-library/react @testing-library/jest-dom
 ````
 
-Add this to your `package.json` scripts:
+Voeg dit toe aan de scripts in je `package.json`:
 
 ```json
 "test": "jest"
@@ -40,7 +40,7 @@ Add this to your `package.json` scripts:
 
 ## Example Unit Test
 
-Create a simple function to test:
+Schrijf een eenvoudige functie om te testen:
 
 ```ts
 // utils/sum.ts
@@ -49,7 +49,7 @@ export function sum(a: number, b: number): number {
 }
 ```
 
-Test it:
+Test deze functie:
 
 ```ts
 // utils/sum.test.ts
@@ -60,7 +60,7 @@ test('adds 1 + 2 to equal 3', () => {
 })
 ```
 
-Run tests:
+Voer de tests uit:
 
 ```bash
 npm test
@@ -70,7 +70,7 @@ npm test
 
 ## Component Testing Example
 
-Testing a React component:
+Een React-component testen:
 
 ```tsx
 // components/Counter.tsx
@@ -88,7 +88,7 @@ export function Counter() {
 }
 ```
 
-Test:
+Testbestand:
 
 ```tsx
 // components/Counter.test.tsx
@@ -109,20 +109,20 @@ test('increments counter', () => {
 
 ### Browser DevTools
 
-* Inspect elements, view console logs, and debug network requests.
-* Use React DevTools extension for inspecting React component hierarchy and props/state.
+* Inspecteer elementen, bekijk consolelogs en debug netwerkverzoeken.
+* Gebruik de React DevTools-extensie om de componenthiërarchie en props/state te bekijken.
 
 ### VSCode Debugger
 
-* Set breakpoints inside `.tsx` files.
-* Launch/debug React apps using `launch.json` configuration.
-* Debug console and variable watch helps trace issues in real time.
+* Zet breakpoints in `.tsx`-bestanden.
+* Start/debug React-apps met een `launch.json`-configuratie.
+* De debugconsole en variabeleweergave helpen je realtime bij het opsporen van fouten.
 
 ---
 
 ## Learn More
 
-* [React Testing Library Docs](https://testing-library.com/docs/react-testing-library/intro/)
-* [Jest Docs](https://jestjs.io/docs/getting-started)
-* [VSCode Debugging for React](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial)
-* [React DevTools](https://reactjs.org/blog/2019/08/15/new-react-devtools.html)
+* 🔗 [React Testing Library Docs](https://testing-library.com/docs/react-testing-library/intro/)
+* 🔗 [Jest Docs](https://jestjs.io/docs/getting-started)
+* 🔗 [VSCode Debugging for React](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial)
+* 🔗 [React DevTools](https://reactjs.org/blog/2019/08/15/new-react-devtools.html)

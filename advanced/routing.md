@@ -5,9 +5,9 @@
 
 ## What Is Routing?
 
-Routing allows your app to navigate between different **pages** or **views**. In React, this is typically handled by the library **React Router**.
+Routing laat je app navigeren tussen verschillende **pagina’s** of **weergaven**. In React wordt dit meestal geregeld met de bibliotheek **React Router**.
 
-Instead of reloading the whole page, React Router changes the URL and swaps components dynamically — giving your app a **Single Page Application (SPA)** experience.
+In plaats van de volledige pagina opnieuw te laden, verandert React Router de URL en wisselt dynamisch van component — waardoor je app aanvoelt als een **Single Page Application (SPA)**.
 
 ---
 
@@ -21,7 +21,7 @@ npm install react-router-dom
 
 ## Basic Setup
 
-In your `main.tsx`, wrap your app in a `<BrowserRouter>`:
+In je `main.tsx`, omhul je je app met een `<BrowserRouter>`:
 
 ```tsx
 // main.tsx
@@ -37,7 +37,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 )
 ```
 
-Then define routes inside `App.tsx`:
+Daarna definieer je routes in `App.tsx`:
 
 ```tsx
 // App.tsx
@@ -59,19 +59,19 @@ function App() {
 
 ## Creating Pages
 
-Create components in the `src/pages/` folder:
+Maak componenten aan in de `src/pages/` map:
 
 ```tsx
 // pages/Home.tsx
 export default function Home() {
-  return <h1>Welcome Home</h1>
+  return <h1>Welkom thuis</h1>
 }
 ```
 
 ```tsx
 // pages/About.tsx
 export default function About() {
-  return <h1>About Us</h1>
+  return <h1>Over ons</h1>
 }
 ```
 
@@ -79,7 +79,7 @@ export default function About() {
 
 ## Navigation with Links
 
-Use the `<Link />` component instead of `<a>`:
+Gebruik de `<Link />` component in plaats van `<a>`:
 
 ```tsx
 import { Link } from 'react-router-dom'
@@ -97,7 +97,7 @@ function NavBar() {
 
 ## Nested Routes (Optional)
 
-You can create layouts with nested `<Outlet />` components:
+Je kunt layouts maken met geneste `<Outlet />` componenten:
 
 ```tsx
 // App.tsx
@@ -107,7 +107,7 @@ You can create layouts with nested `<Outlet />` components:
 </Route>
 ```
 
-Inside `DashboardLayout.tsx`:
+In `DashboardLayout.tsx`:
 
 ```tsx
 import { Outlet } from 'react-router-dom'
@@ -126,15 +126,15 @@ export default function DashboardLayout() {
 
 ## Handling 404 Pages
 
-Add a wildcard route at the end using an asterisk `*`:
+Voeg helemaal onderaan een wildcard route toe met een asterisk `*`:
 
 ```tsx
-<Route path="*" element={<h1>404 - Page Not Found</h1>} />
+<Route path="*" element={<h1>404 - Pagina niet gevonden</h1>} />
 ```
 
 ---
 
-## 🔗 Learn More
+## Learn More
 
-* [React Router Docs](https://reactrouter.com/en/main)
-* [React Router Tutorial (w3schools)](https://www.w3schools.com/react/react_router.asp)
+* 🔗 [React Router Docs](https://reactrouter.com/en/main)
+* 🔗 [React Router Tutorial (w3schools)](https://www.w3schools.com/react/react_router.asp)

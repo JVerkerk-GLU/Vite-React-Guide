@@ -3,21 +3,21 @@
 
 ## What Are Packages?
 
-Packages are **reusable pieces of code** made by other developers that you can add to your project.
+Packages zijn **herbruikbare stukjes code** die door andere developers zijn gemaakt, en die je aan je eigen project kunt toevoegen.
 
-They help you save time and avoid reinventing the wheel — for example, you can install a package for animations, icons, routing, or UI components.
+Ze besparen je tijd en zorgen dat je het wiel niet opnieuw hoeft uit te vinden — je kunt bijvoorbeeld een package installeren voor animaties, iconen, routing of UI-componenten.
 
-We use a tool called **npm** (Node Package Manager) to install packages.
+We gebruiken een tool genaamd **npm** (Node Package Manager) om packages te installeren.
 
 ---
 
 ## Install Packages
 
-To install a package, open your terminal and type:
+Om een package te installeren, open je de terminal en typ je:
 
 ```bash
 npm install <package-name>
-```
+````
 
 ### Example
 
@@ -25,15 +25,15 @@ npm install <package-name>
 npm install react-icons
 ```
 
-This adds the package to your project so you can use it in your code.
+Dit voegt de package toe aan je project zodat je het in je code kunt gebruiken.
 
 ---
 
 ## Using an Installed Package
 
-After installing, you usually import the package at the top of your `.tsx` file.
+Na het installeren importeer je de package meestal bovenaan je `.tsx` bestand.
 
-Example using `react-icons`:
+Voorbeeld met `react-icons`:
 
 ```tsx
 import { FaBeer } from 'react-icons/fa';
@@ -47,19 +47,19 @@ function App() {
 
 ## Dev Packages
 
-Some packages are only needed during development (like formatting or testing tools). For those, use `-D`:
+Sommige packages zijn alleen nodig tijdens het ontwikkelen (zoals formatteertools of testtools). Voor die gevallen gebruik je `-D`:
 
 ```bash
 npm install -D prettier
 ```
 
-These won't be included in the final production build.
+Deze worden niet meegenomen in de uiteindelijke productieversie van je app.
 
 ---
 
 ## Remove a Package
 
-If you installed something by mistake or no longer need it:
+Heb je per ongeluk iets geïnstalleerd of gebruik je het niet meer?
 
 ```bash
 npm uninstall <package-name>
@@ -69,13 +69,13 @@ npm uninstall <package-name>
 
 ## Updating Packages
 
-You can check for outdated packages using:
+Je kunt controleren of er verouderde packages zijn met:
 
 ```bash
 npm outdated
 ```
 
-To update everything that can be safely upgraded:
+Om alles bij te werken dat veilig geüpdatet kan worden:
 
 ```bash
 npm update
@@ -85,15 +85,15 @@ npm update
 
 ## Useful Package Examples
 
-- **UI Libraries**: [Tailwind CSS](https://tailwindcss.com/), [Radix UI](https://www.radix-ui.com/), [Material UI](https://mui.com/)
-- **Routing**: [React Router](https://reactrouter.com/)
-- **State Management**: [Zustand](https://zustand-demo.pmnd.rs/), [Redux](https://redux.js.org/), [Jotai](https://jotai.org/)
-- **Development Tools**: [ESLint](https://eslint.org/), [Prettier](https://prettier.io/)
-- **Testing**: [Vitest](https://vitest.dev/), [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+* **UI Libraries**: [Tailwind CSS](https://tailwindcss.com/), [Radix UI](https://www.radix-ui.com/), [Material UI](https://mui.com/)
+* **Routing**: [React Router](https://reactrouter.com/)
+* **State Management**: [Zustand](https://zustand-demo.pmnd.rs/), [Redux](https://redux.js.org/), [Jotai](https://jotai.org/)
+* **Development Tools**: [ESLint](https://eslint.org/), [Prettier](https://prettier.io/)
+* **Testing**: [Vitest](https://vitest.dev/), [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 
 ---
 
 ## Learn More
 
-🔗 [npm Docs](https://docs.npmjs.com/)  
-🔗 [React Awesome Packages](https://reactjsexample.com/)
+* 🔗 [npm Docs](https://docs.npmjs.com/)
+* 🔗 [React Awesome Packages](https://reactjsexample.com/)
