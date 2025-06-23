@@ -32,3 +32,10 @@ Lever je eindopdracht uiterlijk in via het inleverloket op de ELO:
 
 ⚠️ **Let op:** dit is een examenonderdeel.
 **Te laat ingeleverd = niet ingeleverd.** Zorg dat je op tijd bent.
+
+## Eindproduct
+
+Voor het eind product lever je een 7z bestand in met de volgende onderdelen:
+* Video Presentatie
+* Smart Document
+* **Project**: Je project folder (exclusief node-modules en .idea/.vs folders)
